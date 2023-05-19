@@ -79,7 +79,12 @@ body {
     position: relative;
 }
 
-.mock-up-nav img {
+.back-btn {
+    width: 1rem;
+    margin-left: .5rem;
+}
+
+.avatar img {
     width: 1.5rem;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
@@ -107,7 +112,7 @@ body {
     border-top-right-radius: .2rem;
     border-bottom-right-radius: 1.9rem;
     border-bottom-left-radius: 1.9rem;
-    padding: .7rem .7rem 0;
+    padding: .7rem;
 }
 
 .received {
@@ -201,11 +206,30 @@ body {
     margin-left: 2rem;
 }
 
+.msg-input {
+    position: relative;
+}
+
 .msg-input input {
     border: none;
     outline: none;
     padding: 1rem 3rem 1rem 1.25rem;
     border-radius: 2rem;
+}
+
+.msg-input input::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+
+.msg-input button {
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    background: hsl(271, 36%, 24%);
+    top: .5rem;
+    left: 12.5rem;
 }
 
 .text-description {
@@ -224,6 +248,7 @@ body {
 
 .attribution { 
     font-size: 11px; text-align: center;
+    margin-top: 1rem;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -264,12 +289,36 @@ body {
     
     .container::after {
         width: 15rem;
-        height: 31.5rem;
-        top: 14.5rem;
-        right: 0;
+        max-width: 100%;
+        height: 100%;
+        top: 4rem;
+        right: 0rem;
+    }
+
+    .text-description {
+        margin-right: 1rem;
     }
 
     .mock-up {
-        margin-left: 18rem;
+        margin-left: 14rem;
     }
+}
+
+@media screen and (min-width: 90rem){
+    .text-description {
+        width: 35%;
+        margin-right: 18rem;
+    }
+
+    .container::after {
+        width: 28rem;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .container::before {
+        width: 28rem;
+        height: 45rem;
+    }
+    
 }
