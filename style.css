@@ -20,7 +20,6 @@ body {
     width: 18rem;
     height: 37.8rem;
     max-width: 100%;
-    /* border: 1px solid red ; */
     box-shadow: 7px 9px 126px -17px rgba(0,0,0,0.52);
     -webkit-box-shadow: 7px 9px 126px -17px rgba(0,0,0,0.52);
     -moz-box-shadow: 7px 9px 126px -17px rgba(0,0,0,0.52);
